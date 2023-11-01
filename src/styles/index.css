@@ -1,0 +1,75 @@
+
+@import url('./style.scss');
+@import url('./dark.scss');
+
+#app {
+    width: 100%;
+    max-width: none;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "SourceHanSansSC";
+}
+
+/*bootstrap常用样式*/
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.pull-right {
+    float: right;
+}
+
+.clearBoth {
+    clear: both;
+}
+
+/*自定义单行样式*/
+.cursorP {
+    cursor: pointer;
+}
+
+/** webkit滚动条样式 **/
+::-webkit-scrollbar {
+    width: 4px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: transparent;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 6px #808080;
+    border-radius: 0;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background: #808080 !important;
+    -webkit-box-shadow: inset 6px #808080;
+}
+
+
+/* 分页 */
+.el-pagination.is-background .el-pager li.is-active {
+    background-color: transparent;
+    color: var(--el-color-primary);
+    border: 1px solid;
+    border-radius: 4px;
+}

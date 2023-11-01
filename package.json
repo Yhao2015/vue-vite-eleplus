@@ -1,0 +1,47 @@
+{
+    "name": "vite-ts-eleplus",
+    "license": "MIT",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite --force",
+        "start": "vite",
+        "build": "vite build --mode=production",
+        "build:stag": "vite build --mode=staging",
+        "serve": "vite preview",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@element-plus/icons-vue": "^2.1.0",
+        "axios": "^1.5.0",
+        "css-loader": "^6.8.1",
+        "dayjs": "^1.11.10",
+        "element-plus": "^2.3.12",
+        "exceljs": "^4.4.0",
+        "jsencrypt": "^3.3.2",
+        "jw-component-library": "^1.0.8",
+        "less": "^4.2.0",
+        "lodash": "^4.17.21",
+        "nprogress": "^0.2.0",
+        "pinia": "^2.1.7",
+        "pinia-plugin-persist": "^1.0.0",
+        "qs": "^6.11.2",
+        "rollup-plugin-visualizer": "^5.9.2",
+        "style-loader": "^3.3.3",
+        "terser": "^5.20.0",
+        "vue": "^3.3.4",
+        "vue-lazyload": "^3.0.0",
+        "vue-router": "4"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^4.2.3",
+        "sass": "^1.68.0",
+        "typescript": "^5.0.2",
+        "unplugin-auto-import": "^0.16.6",
+        "unplugin-vue-components": "^0.25.2",
+        "vite": "^4.4.5",
+        "vite-plugin-compression": "^0.5.1",
+        "vue-tsc": "^1.8.5"
+    }
+}

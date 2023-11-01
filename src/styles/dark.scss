@@ -1,0 +1,109 @@
+html.dark {
+    /* 自定义深色背景颜色 */
+    --el-bg-color: #222a4d;
+    // --el-mask-color: #292f3a;
+
+    .el-card {
+        --el-card-bg-color: rgba(47, 55, 76, 0.7);
+    }
+
+    .el-pagination {
+        --el-disabled-bg-color: transparent;
+        --el-pagination-button-bg-color: transparent;
+    }
+
+    .jw_pagination {
+        position: absolute;
+        bottom: 36px;
+        right: 48px;
+    }
+
+    .el-table {
+        --el-table-header-bg-color: #28303a;
+        --el-table-tr-bg-color: #131d29;
+        --el-fill-color-lighter: #18222d;
+        --el-table-row-hover-bg-color: #18222d;
+    }
+
+    .el-table .el-table__cell {
+        height: 50px;
+    }
+
+    .el-table .el-table-fixed-column--right {
+        background: #131d29;
+    }
+    .el-table thead .el-table-fixed-column--right {
+        background: #28303a;
+    }
+
+    .el-table td.el-table__cell,
+    .el-table th.el-table__cell.is-leaf {
+        border: 0;
+    }
+
+    .el-empty__description p {
+        color: #999999;
+    }
+
+    .el-input__wrapper {
+        box-shadow: none !important;
+        background-color: rgba(153, 153, 153, 0.12);
+    }
+
+    .el-button {
+        border: 0;
+        --el-button-bg-color: rgba(153, 153, 153, 0.24);
+        --el-button-hover-bg-color: rgba(153, 153, 153, 0.24);
+    }
+
+    .el-button--primary {
+        --el-button-bg-color: var(--el-color-primary);
+        --el-button-hover-bg-color: var(--el-color-primary);
+    }
+
+    .el-select-dropdown__item {
+        font-weight: 400;
+        color: #999999;
+    }
+
+    .el-select-dropdown__item.hover {
+        color: var(--el-color-primary);
+        font-weight: 700;
+        background: rgba(4, 159, 255, 0.08);
+    }
+
+    .el-select-dropdown__item.selected {
+        background: rgba(4, 159, 255, 0.08);
+        color: #049dff;
+    }
+
+    .el-popper.is-light {
+        background: #232e3a;
+        border-color: rgba(153, 153, 153, 0.16);
+    }
+
+    .el-popper.is-light .el-popper__arrow::before {
+        background: #232e3a;
+        border-color: rgba(153, 153, 153, 0.16);
+    }
+
+    .jw_dialog {
+        .el-table th.el-table__cell {
+            background-color: rgba(153, 153, 153, 0.12);
+        }
+
+        .el-table tr {
+            background-color: #242e3a;
+        }
+
+        .el-table--striped .el-table__body tr.el-table__row--striped td.el-table__cell {
+            background-color: rgba(153, 153, 153, 0.06);
+        }
+    }
+
+    .jw_dialogTableCurrent {
+        background-color: #1F3B52 !important;
+    }
+
+
+}
