@@ -6,6 +6,7 @@
     "type": "module",
     "scripts": {
         "dev": "vite --force",
+        "mock": "vite --mode mock --force",
         "start": "vite",
         "build": "vite build --mode=production",
         "build:stag": "vite build --mode=staging",
@@ -36,12 +37,14 @@
     },
     "devDependencies": {
         "@vitejs/plugin-vue": "^4.2.3",
+        "mockjs": "^1.1.0",
         "sass": "^1.68.0",
         "typescript": "^5.0.2",
         "unplugin-auto-import": "^0.16.6",
         "unplugin-vue-components": "^0.25.2",
         "vite": "^4.4.5",
         "vite-plugin-compression": "^0.5.1",
+        "vite-plugin-mock": "^2.9.6",
         "vue-tsc": "^1.8.5"
     }
 }

@@ -5,8 +5,10 @@ import { stringify } from 'qs'
 import { ElMessage } from 'element-plus'
 import JSEncrypt from 'jsencrypt'
 
+
+console.log(import.meta.env.VITE_BASE_URL)
 const service: AxiosInstance = axios.create({
-    baseURL: import.meta.env.VITE_BASE_URL,
+    baseURL: import.meta.env.VITE_BASE_URL || '/',
     timeout: 36000000 //设置超时时间
 })
 

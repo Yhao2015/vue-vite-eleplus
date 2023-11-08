@@ -12,27 +12,23 @@ import uninformationPng from './image/uninformation.png'
 
 export const menuData = reactive<MenuData[]>([
     {
-        name: '实时监测',
-        path: 'monitor',
-        icon: [monitorPng, unmonitorPng]
-    },
-    {
-        name: '信息管理',
+        name: 'Demo',
         path: 'information',
         icon: [informationPng, uninformationPng],
         children: [
             {
-                path: 'site',
-                name: '站点管理'
+                path: 'form',
+                name: '表单'
             },
             {
-                path: 'car',
-                name: '车辆管理'
-            },
-            {
-                path: 'user',
-                name: '人员管理'
+                path: 'table',
+                name: '表格'
             }
         ]
+    },
+    {
+        name: 'EChart',
+        path: 'chart',
+        icon: [monitorPng, unmonitorPng]
     }
 ])

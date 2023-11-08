@@ -16,7 +16,6 @@
         </div>
         <div class="jw_headerRight">
             <el-space wrap :size="16">
-                <!-- <img :src="alarmPng" width="20"/> -->
                 <div class="jw_info">
                     <span>{{ "hi," + (userName || "超级管理员") }}</span>
                     <span class="jw_time">{{ nowTime }}</span>

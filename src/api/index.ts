@@ -6,7 +6,7 @@ const api: any = {
     },
     sys: {
         // 个人中心-用户信息
-        userInfoUrl: 'sys/user/info',
+        userInfoUrl: '/sys/user/info',
         menuListUrl: '/sys/menu/nav'
     }
 } 

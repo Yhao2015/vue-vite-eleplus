@@ -6,8 +6,10 @@ import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 // import { visualizer } from 'rollup-plugin-visualizer' 打包分析
 
+import { viteMockServe } from "vite-plugin-mock";
+
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(({ command, mode }) => ({
     base: './',
     resolve: {
         alias: {
@@ -86,6 +88,10 @@ export default defineConfig({
                 })
             ],
             dts: './components.d.ts'
+        }),
+        viteMockServe({
+            mockPath: './mock',
+            localEnabled: command === "serve" && mode === "mock"
         })
     ]
-})
+}))

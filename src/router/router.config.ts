@@ -14,10 +14,26 @@ let routeMap = reactive([
         path: '/index',
         name: 'index',
         component: () => import('../views/Index/Index.vue'),
-        // redirect: { name: 'monitor' },
+        redirect: { name: 'form' },
         props: true,
         // alias: "/h",
-        children: []
+        children: [
+            {
+                path: '/chart',
+                name: 'chart',
+                component: () => import('../views/Chart/Index.vue')
+            },
+            {
+                path: '/form',
+                name: 'form',
+                component: () => import('../views/Form/Index.vue')
+            },
+            {
+                path: '/table',
+                name: 'table',
+                component: () => import('../views/Table/Index.vue')
+            }
+        ]
     },
     {
         path: '/403',
